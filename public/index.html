@@ -1,48 +1,97 @@
-<!doctype html>
-<html ng-app="myApp" ng-controller="myCtrl">
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <script src="script.js"></script>
-</head>
-<body>
-    <div>
-    <table>
-        <tr>
-        <td>Name:</td>
-        <td><input type="text" ng-model="Name"></td>
-        </tr>
-        <tr>
-        <td>Isbn:</td>
-        <td><input type="text" ng-model="Isbn"></td>
-        </tr>
-        <tr>
-        <td>Author:</td>
-        <td><input type="text" ng-model="Author"></td>
-        </tr>
-        <tr>
-        <td>Pages:</td>
-        <td><input type="number" ng-model="Pages"></td>
-        </tr>
-    </table>
-    <button ng-click="add_book()">Add</button>
-    </div>
-    <hr>
-    <div>
-    <table>
-        <tr>
-        <th>Name</th>
-        <th>Isbn</th>
-        <th>Author</th>
-        <th>Pages</th>
-        </tr>
-        <tr ng-repeat="book in books">
-        <td><input type="button" value="Delete" data-ng-click="del_book(book)"></td>
-        <td>{{book.name}}</td>
-        <td>{{book.isbn}}</td>
-        <td>{{book.author}}</td>
-        <td>{{book.pages}}</td>
-        </tr>
-    </table>
-    </div>
-</body>
+<!DOCTYPE html>
+<html >
+    
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                   
+                    <h1 class="font-weight-bold">Juan David Rojas C</h1>
+                    <p class="mb-4">
+                        Tengo 21 años y soy estudiante de ingeniería de sistemas, actualmente me
+encuentro estudiando. Tengo conocimientos y experiencia en diferentes lenguajes
+de programación como Java y Python y en el manejo de bases de datos con MySQL y
+PostgreSQL. <br>
+Soy una persona comprometida con mi trabajo, puntual y organizada, además de
+esto me gusta aprender y buscar sobre nuevos temas. Tengo un buen circulo social
+y considero que puedo comunicarme fácilmente y de la mejor manera
+                    </p>
+                   
+                  
+            </div>
+           
+                <!-- Navbar End -->
+                
+                <!-- Carousel Start -->
+                <div class="container p-0">
+                    <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="mb-3 text-white font-weight-bold">FORMACIÓN ACADEMICA</h2>
+                                    <p class="mb-4">
+                                        Bachillerato <br>
+                                        Colegio Bilingüe Real Americano<br>
+                                        Bogotá D.C<br>
+                                        Año 2007-Año 2017<br>
+                                        Ingeniería de sistemas<br><br><br>
+                                        Universidad el Bosque<br>
+                                        Bogotá D.C<br>
+                                        6 semestre<br>
+                                        Año 2022 – actualmente <br>
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                            
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="text-white font-weight-bold">REFERENCIAS FAMILIARES</h2>
+                                    <div class="d-flex">
+                                        <p class="mb-4">
+                                            Carlos Augusto Rojas Marin (Papá) <br>
+                                            Empleado-Ingeniero de Sistemas<br>
+                                            Nikken<br>
+                                            Cel. 3208464789<br><br><br>
+                                            Martha Andrea Castelblanco (Mama)<br>
+                                            Independiente-Ingeniero De Sistemas<br>
+                                            Cel. 3138339727<br>
+                                            
+                                        </p>
+                                    </div>
+                                    <h2 class="text-white font-weight-bold">REFERENCIAS PERSONALES</h2>
+                                    <div class="d-flex">
+                                        <p class="mb-4">
+                                            Nicolas Reyes <br>
+                                            Auxiliar<br>
+                                            Seguros del Estado<br>
+                                            Cel. 3142119217<br>
+                                            Ricardo Ochoa<br>
+                                            Empleado<br>
+                                            Contraloría<br>
+                                            Cel. 3182711433<br>
+
+                                            
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Carousel End -->
+               
+    </body>
 </html>
